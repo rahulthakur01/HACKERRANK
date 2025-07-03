@@ -10,7 +10,7 @@ int getMoneySpent(vector<int> keyboards, vector<int> drives, int b) {
        
         for(int j = 0; j< drives.size(); j++){
            int sum = keyboards[i] + drives[j];
-            if(closestSum < sum &&  sum < b){
+            if(closestSum < sum &&  sum <= b){
                 closestSum = sum;
             }
         }
