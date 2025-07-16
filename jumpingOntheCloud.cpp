@@ -5,15 +5,19 @@ using namespace std;
 int jumpingOnCloud(vector<int> &c, int k){
     int energy = 100;
     int n = c.size();
-    int position;
-    for(int i = 0; i<n; i=i+2){
-        position = (i + k)%n;
-        if(c[position] == 1){
-            energy = energy-3;
-        }else{
-            energy = energy -1;
-        }
+    int position = 0;
+ while(true){
+    position = (position + k)%n;
+    if(c[position] == 1){
+        energy = energy-3;
+    }else{
+        energy = energy -1;
     }
+    if(position == 0){
+        break;
+    }
+ }
+      
     return energy;
 }
 
