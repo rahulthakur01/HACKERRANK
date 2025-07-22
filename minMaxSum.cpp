@@ -25,7 +25,9 @@ void minMax(vector<int> &arr){
 }
 
 int main(){
-    vector<int> arr =  {1, 5, 7, 9};
+    // vector<int> arr =  {1, 5, 7, 9};
+    vector<int> arr =  {0};
+
     minMax(arr);
     return 0;
 }
