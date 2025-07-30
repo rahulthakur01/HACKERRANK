@@ -1,9 +1,11 @@
 #include<iostream>
+#include<climits>
 #include<vector>
 using namespace std;
 
 int birthdayCakeCandles(int arr[], int n){
-  int maxHeight = arr[0];
+  // int maxHeight = arr[0];
+  int maxHeight = INT_MIN;
     int count = 0;
     for(int i = 0; i<n; i++){
        if(arr[i] > maxHeight){
