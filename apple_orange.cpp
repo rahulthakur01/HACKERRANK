@@ -8,7 +8,7 @@ using namespace std;
 // -2 2 1
 // 5 -6
 
-void countApplesAndOranges(int s, int t, int a, int b, vector<int> apples, vector<int> oranges) {
+void countApplesAndOranges(int s, int t, int a, int b, const vector<int>& apples, const vector<int>&oranges) {
     int appleCount = 0;
     int orangeCount = 0;
 

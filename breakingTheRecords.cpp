@@ -7,7 +7,7 @@ vector<int>breakingRecords(vector<int> arr){
     vector<int> count(2,0);
     int minScore = arr[0];
     int maxScore = arr[0];
-    for(int i = 0; i<arr.size(); i++){
+    for(int i = 1; i<arr.size(); i++){
 
         if(minScore > arr[i]){
             minScore = arr[i];
